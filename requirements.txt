@@ -1,0 +1,18 @@
+# LipNet - Lip Reading Deep Learning App
+# Compatible with Python 3.10
+
+# Core ML framework
+tensorflow==2.13.0
+
+# Video processing
+opencv-python==4.8.1.78
+
+# Web UI
+streamlit==1.28.0
+
+# Image/video I/O
+imageio==2.31.6
+imageio-ffmpeg==0.4.9
+
+# Utilities (usually installed with the above, listed for completeness)
+numpy==1.24.3

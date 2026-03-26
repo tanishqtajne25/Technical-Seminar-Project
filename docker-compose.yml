@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  lipnet-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount the local application code so changes reflect without rebuilding
+      - .:/app
+      # Mount the dataset directory to the container
+      - D:\TS\ypc\data:/data
+    environment:
+      # Specify the path to the dataset inside the container
+      - DATA_ROOT=/data
+      - PYTHONUNBUFFERED=1

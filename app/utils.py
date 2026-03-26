@@ -4,7 +4,7 @@ import cv2
 import os
 
 # Root path to the GRID corpus data
-DATA_ROOT = r'D:\TS\ypc\data'
+DATA_ROOT = os.environ.get('DATA_ROOT', r'D:\TS\ypc\data')
 
 vocab = [x for x in "abcdefghijklmnopqrstuvwxyz'?!123456789 "]
 char_to_num = tf.keras.layers.StringLookup(vocabulary=vocab, oov_token="")

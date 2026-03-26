@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+.env
+LipNet.ipynb
+*-checkpoint*
+models - checkpoint 50/
+models - checkpoint 96/
